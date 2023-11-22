@@ -1,0 +1,86 @@
+@{
+    ViewData["Title"] = "Faça seu Pedido";
+}
+
+
+<section id="formulario">
+
+  <h2>Cadastro de Pizza</h2>
+
+  <form>
+
+    <div class="campo">
+      <label for="sabor">Nome da Pizza:</label>  
+      <input type="text" id="sabor" name="sabor" required pattern="[A-Z]{3}-[0-9]{3}">
+    </div>
+
+    <div class="campo">
+      <label for="tamanho">Tamanho:</label>
+      <select id="tamanho" name="tamanho" required>
+        <option value="pequena">Pequena - R$ 20,00</option>
+        <option value="média">Média - R$ 30,00</option>
+        <option value="grande">Grande - R$ 40,00</option>
+     </select>
+    </div>
+
+    <div class="campo">
+      <label for="preco">Preço:</label>  
+      <span id="preco"></span>
+    </div>
+    
+    <div class="campo">
+      <label for="imagem">Imagem da Pizza:</label>  
+    
+      <input type="file" id="imagem" name="imagem" accept="image/*">
+      
+      <div class="preview">
+        <img id="preview-image" src="#" alt="Preview da Imagem">
+      </div>
+    </div>
+
+    <button type="submit">Cadastrar Pizza</button>
+
+  </form>
+
+</section>
+
+
+
+<script>
+    // Elementos
+const tamanho = document.getElementById('tamanho'); 
+const preco = document.getElementById('preco');
+const imgInput = document.querySelector('#imagem');
+const previewImg = document.querySelector('#preview-image');
+
+// Preço
+tamanho.addEventListener('change', () => {
+  if(tamanho.value == 'pequena') { 
+    preco.innerText = 'R$ 20,00';
+  } else if(tamanho.value == 'média') {
+    preco.innerText = 'R$ 30,00';
+  } else if(tamanho.value == 'grande') {
+    preco.innerText = 'R$ 40,00';
+  }
+});
+
+
+// Pré-visualização
+imgInput.addEventListener('change', () => {
+  const file = imgInput.files[0];
+
+  if(file) {
+    const reader = new FileReader();
+
+    reader.addEventListener('load', () => {
+      previewImg.src = reader.result;
+    });
+
+    reader.readAsDataURL(file);
+  } else {
+    previewImg.src = '#'; 
+  }
+});
+</script>
+
+
