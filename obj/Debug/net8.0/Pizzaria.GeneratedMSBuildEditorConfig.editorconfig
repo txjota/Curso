@@ -18,8 +18,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\otxjota\Documents\Estudos\Pizzaria-Delicia
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/otxjota/Documents/Estudos/Pizzaria-Delicia/Views/Home/Cadastro.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWRhc3Ryby5jc2h0bWw=
+[C:/Users/otxjota/Documents/Estudos/Pizzaria-Delicia/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q2FkYXN0cm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/otxjota/Documents/Estudos/Pizzaria-Delicia/Views/Home/Index.cshtml]
