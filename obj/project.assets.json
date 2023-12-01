@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\otxjota\\Documents\\Estudos\\Pizzaria\\Pizzaria.csproj",
+      "projectUniqueName": "C:\\Users\\otxjota\\Documents\\Estudos\\Pizzaria-Delicia\\Pizzaria.csproj",
       "projectName": "Pizzaria",
-      "projectPath": "C:\\Users\\otxjota\\Documents\\Estudos\\Pizzaria\\Pizzaria.csproj",
+      "projectPath": "C:\\Users\\otxjota\\Documents\\Estudos\\Pizzaria-Delicia\\Pizzaria.csproj",
       "packagesPath": "C:\\Users\\otxjota\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\otxjota\\Documents\\Estudos\\Pizzaria\\obj\\",
+      "outputPath": "C:\\Users\\otxjota\\Documents\\Estudos\\Pizzaria-Delicia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\otxjota\\AppData\\Roaming\\NuGet\\NuGet.Config"
